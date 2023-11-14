@@ -1,0 +1,48 @@
+>>>>>> You have to be very careful with confirmation bias when trying to explore and transform the same data so that it gives you what you believe, an enormous amount of confirmation bias is committed.... <<<<<<
+
+using ml and rl is perfectly correct, you can do something personalized but in the end you fall into the same thing,
+
+>>>>>>you just have to choose and adapt the data well,<<<<<<
+
+if they don't use ml and rl in algorithmic trading today, 
+they either have privileged information or they are real geniuses, all financial entities use ml and its variants today to make ANY investment decision
+
+Параметры системы:
+
+Пред подготовка данных
+- объем темпа торгов #  VOL 500
+
+Индикатор
+
+- Период Индикатора Фишера # 10
+
+- Параметры определения локальных минимумов и максимумов - 
+    - если  идет +-+ => +++
+                -+- => --- 
+      Параметр последовательности   # 1
+
+- Плотность Сигналов,
+    - их частота
+    - количество плохих сделок до этого момента
+
+
+LSTM
+- предсказать цену закрытия
+- посчитать значение фишера
+- определить сигнал
+- соотв оценить сигнал
+
+TODO:
+- разобраться с JN чтобы всегда было trusted.(надоело уже один раз)
+
+
+Построить распределение расстояния между сигналами, по торговым дням.
+
+Stock price to Image
+https://dwbi1.wordpress.com/2022/02/10/stock-price-forecasting-using-cnn/
+
+
+ Там ошибка точно по кроссвалидации считается?
+11:20anonim040: Мне кажется кроссвалидации там не используется
+11:25anonim040: Я уже точно не помню но она же вроде на то и кроссвалидация, что она как то перекрестно должна loss считать
+11:30anonim040: А готовый cross_validate из scikitlearn не проще использовать
