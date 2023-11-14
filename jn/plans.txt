@@ -32,10 +32,10 @@ LSTM
 - определить сигнал
 - соотв оценить сигнал
 
-- проблема в том что у нас модель предсказывает на выходе одно и тоже число.
-
-
-
+:> проблема в том что у нас модель предсказывает на выходе одно и тоже число.
+:> Проверить LSTM когда в нее подается OHLC
+https://github.com/fossasia/visdom
+:? как работает оценка Loss в batch?
 
 
 TODO:
@@ -70,3 +70,5 @@ COMMENT # 4
 5:27anonim040: а должна
 
 https://github.com/devitrylouis/imaging_time_series/tree/master
+https://scikit-learn.org/stable/modules/cross_validation.html
+https://github.com/hichenway/stock_predict_with_LSTM/blob/master/model/model_pytorch.py
