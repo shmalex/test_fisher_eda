@@ -26,19 +26,21 @@ they either have privileged information or they are real geniuses, all financial
     - количество плохих сделок до этого момента
 
 
-LSTM
+Большой план по LSTM
 - предсказать цену закрытия
 - посчитать значение фишера
 - определить сигнал
 - соотв оценить сигнал
 
 :> проблема в том что у нас модель предсказывает на выходе одно и тоже число.
-:> Проверить LSTM когда в нее подается OHLC
-https://github.com/fossasia/visdom
+:> Проверить LSTM когда в нее подается OHLC https://github.com/fossasia/visdom
 :? как работает оценка Loss в batch?
 
 
 TODO:
++ Скачать больше данных по MNQ
+    + Проблеме> данные пересекаются и не понятно как это обрабатывать.
+    + я не будут решать эту проблему, пускай с этим бьется Алексей будущего. (удачи)
 - разобраться с JN чтобы всегда было trusted.(надоело уже один раз)
 - Попробовать create_sequences но смещаться не на 1, а на размер последовательности (a.k.a 52) (see comm # 2)
 - Почему кто-то передает hidden в LSTM в методе forward, а кто-то нет?
@@ -69,6 +71,21 @@ COMMENT # 4
 5:27anonim040: я надеюсь у нас модель после каждого фолда сбрасывалась?
 5:27anonim040: а должна
 
+COMMENT # 5
+6:25SDDSDDSA: для этого можно еще использовать такие штуки как wandb, tensorboard, clearml, Comet если я правильно вас понял
+
+
+
+https://dwbi1.wordpress.com/2022/02/10/stock-price-forecasting-using-cnn/
 https://github.com/devitrylouis/imaging_time_series/tree/master
+
 https://scikit-learn.org/stable/modules/cross_validation.html
 https://github.com/hichenway/stock_predict_with_LSTM/blob/master/model/model_pytorch.py
+
+https://btseytlin.github.io/intro.html
+
+
+https://www.youtube.com/watch?v=Vfx1L2jh2Ng
+
+# валидация
+https://www.youtube.com/watch?v=F0tlV4W62AU&list=PLlb7e2G7aSpT1ntsozWmWJ4kGUsUs141Y&index=5
